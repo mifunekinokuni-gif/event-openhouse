@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>完成見学会｜回遊動線×ブラックモダンの家（和歌山市船所）</title>
+  <meta name="description" content="1/24(土)・25(日) 10:00〜17:00｜和歌山市船所（詳細は予約後案内）｜回遊動線、ブラックモダン外観、小上がり和室、耐震等級3など見どころ多数。完全予約制。">
+  <style>
+    :root{
+      --bg:#0b0b0c;
+      --card:#121216;
+      --text:#f3f3f4;
+      --muted:#b7b7be;
+      --line:#26262e;
+      --shadow: 0 14px 34px rgba(0,0,0,.42);
+
+      /* ここが“雰囲気”を作る色 */
+      --accent:#d6b36a;   /* ゴールド系 */
+      --accent2:#2a2a34;  /* ダークな補助 */
+      --good:#7ee0b5;     /* 小さな強調用 */
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, "Hiragino Kaku Gothic ProN", "Noto Sans JP", "Segoe UI", sans-serif;
+      color:var(--text);
+      background:
+        radial-gradient(900px 520px at 15% -10%, rgba(214,179,106,.18), transparent 62%),
+        radial-gradient(900px 520px at 90% 0%, rgba(255,255,255,.06), transparent 62%),
+        linear-gradient(180deg, #070708, var(--bg));
+    }
+    a{color:inherit}
+    .wrap{max-width:1050px; margin:0 auto; padding:28px 18px 70px}
+
+    .hero{
+      border:1px solid var(--line);
+      background:rgba(18,18,22,.78);
+      border-radius:24px;
+      overflow:hidden;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .heroTop{
+      display:grid;
+      gap:18px;
+      padding:22px;
+    }
+    @media (min-width:960px){
+      .heroTop{grid-template-columns: 1.1fr .9fr; align-items:stretch;}
+    }
+    .eyebrow{
+      display:inline-flex; gap:8px; align-items:center;
+      color:var(--muted); font-size:13px; letter-spacing:.06em;
+    }
+    .dot{
+      width:8px; height:8px; border-radius:99px; background:var(--accent);
+      box-shadow: 0 0 0 4px rgba(214,179,106,.16);
+    }
+    h1{margin:10px 0 8px; font-size:32px; line-height:1.22}
+    .lead{margin:0; color:var(--muted); line-height:1.85; font-size:15px}
+
+    .pills{margin-top:14px; display:flex; flex-wrap:wrap; gap:8px}
+    .pill{
+      display:inline-flex; align-items:center; gap:8px;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      color:var(--muted); font-size:13px;
+    }
+    .pill strong{color:var(--text); font-weight:650}
+
+    .heroMedia{
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+      background:
+        linear-gradient(135deg, rgba(214,179,106,.14), rgba(255,255,255,.02)),
+        radial-gradient(600px 250px at 30% 0%, rgba(255,255,255,.08), transparent 60%),
+        #101014;
+      min-height:240px;
+      position:relative;
+    }
+    .heroMedia img{
+      width:100%; height:100%; object-fit:cover; display:block;
+      filter: saturate(1.05) contrast(1.02);
+    }
+    .mediaBadge{
+      position:absolute; left:14px; bottom:14px;
+      display:inline-flex; gap:8px; align-items:center;
+      padding:8px 10px; border-radius:999px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(0,0,0,.35);
+      font-size:12px; color:var(--text);
+      backdrop-filter: blur(6px);
+    }
+    .mediaBadge .check{
+      width:18px; height:18px; border-radius:99px;
+      background: rgba(126,224,181,.18);
+      border:1px solid rgba(126,224,181,.35);
+      display:inline-flex; align-items:center; justify-content:center;
+      font-weight:800; color:var(--good);
+    }
+
+    .ctaRow{display:flex; flex-wrap:wrap; gap:10px; margin-top:16px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      padding:12px 14px; border-radius:16px;
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      text-decoration:none;
+      min-width: 200px;
+      transition: transform .12s ease, background .12s ease, border-color .12s ease;
+    }
+    .btn.primary{
+      background: linear-gradient(180deg, rgba(214,179,106,.95), rgba(214,179,106,.80));
+      color:#14110b;
+      border-color: rgba(214,179,106,.65);
+      font-weight:800;
+    }
+    .btn:hover{transform: translateY(-1px); border-color: rgba(214,179,106,.35)}
+    .btn:active{transform: translateY(0px)}
+    .small{color:var(--muted); font-size:13px; line-height:1.75}
+
+    .grid{display:grid; gap:14px; margin-top:14px}
+    @media (min-width:900px){ .grid{grid-template-columns:1.1fr .9fr} }
+
+    .card{
+      border:1px solid var(--line);
+      background:rgba(18,18,22,.78);
+      border-radius:22px;
+      padding:18px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+    .card h2{margin:0 0 10px; font-size:18px}
+    .meta{display:grid; grid-template-columns:110px 1fr; gap:8px 12px; line-height:1.85; font-size:15px}
+    .meta dt{color:var(--muted)}
+    .meta dd{margin:0}
+    .line{height:1px; background:var(--line); margin:12px 0}
+
+    /* 見どころをカード化 */
+    .features{display:grid; gap:10px; margin-top:10px}
+    @media (min-width:700px){ .features{grid-template-columns:1fr 1fr} }
+    .feature{
+      border:1px solid var(--line);
+      background:rgba(255,255,255,.02);
+      border-radius:18px;
+      padding:12px 12px;
+    }
+    .feature .tag{
+      display:inline-block;
+      font-size:12px;
+      color:rgba(214,179,106,.95);
+      letter-spacing:.04em;
+      margin-bottom:6px;
+    }
+    .feature .txt{margin:0; line-height:1.7; color:var(--text)}
+
+    .badge{
+      display:inline-block; padding:6px 10px; border-radius:999px;
+      border:1px solid var(--line); background:rgba(255,255,255,.02);
+      color:var(--muted); font-size:12px;
+    }
+
+    footer{margin-top:14px}
+  </style>
+</head>
+
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <div class="heroTop">
+        <div>
+          <div class="eyebrow"><span class="dot"></span>完成見学会（完全予約制）｜和歌山市船所</div>
+          <h1>回遊動線で暮らしが整う、ブラックモダンの家</h1>
+          <p class="lead">
+            家事・生活のしやすさとデザイン性を両立した住まいを、2日間限定でご案内します。
+            実際のサイズ感・動線・収納計画を、現地で体感してください。
+          </p>
+
+          <div class="pills">
+            <span class="pill"><strong>延床</strong>35.68坪</span>
+            <span class="pill"><strong>敷地</strong>49.02坪</span>
+            <span class="pill"><strong>LDK</strong>19.5帖</span>
+            <span class="pill"><strong>耐震等級3</strong>＋制震</span>
+            <span class="pill"><strong>高気密</strong>・高断熱</span>
+          </div>
+
+          <div class="ctaRow">
+            <a class="btn primary" href="#reserve">来場予約（Googleフォーム）</a>
+            <a class="btn" href="#contact">LINEで問い合わせ</a>
+            <a class="btn" href="#highlights">見どころ</a>
+          </div>
+
+          <p class="small" style="margin-top:10px;">※会場の詳細住所は、ご予約後にご案内します。</p>
+        </div>
+
+        <div class="heroMedia" aria-label="物件イメージ">
+          <!-- ★写真を入れる場合：同じフォルダに hero.jpg を置く（後述） -->
+          <img src="hero.jpg" alt="完成見学会の住まい（イメージ）" onerror="this.style.display='none';">
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="grid">
+      <article class="card" id="reserve">
+        <h2>開催概要</h2>
+        <dl class="meta">
+          <dt>開催日</dt><dd>1/24(土)・25(日)</dd>
+          <dt>時間</dt><dd>10:00〜17:00</dd>
+          <dt>開催地</dt><dd>和歌山市船所（詳細は予約後案内）</dd>
+          <dt>形式</dt><dd>完全予約制</dd>
+        </dl>
+
+        <div class="line"></div>
+
+        <h2>来場予約（Googleフォーム）</h2>
+        <p class="small" style="margin:0 0 10px;">
+          ご希望日時をフォームから送信してください。確認後、詳細住所とご案内をお送りします。
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn primary"
+             href="https://docs.google.com/forms/d/e/1FAIpQLSfl7vH1iJFZ_LqnhxRftJeGWSTGkeoj89-yd80Hpm0Hnufe1Q/viewform?usp=header"
+             target="_blank" rel="noopener">
+            予約フォームを開く
+          </a>
+          <a class="btn" href="#contact">フォームが開けない／相談したい → LINE</a>
+        </div>
+
+        <p class="small" style="margin-top:10px;">
+          目安：所要30〜45分。お子さま連れもOK（スタッフでサポートします）。
+        </p>
+      </article>
+
+      <aside class="card" id="highlights">
+        <h2>見どころ</h2>
+
+        <div class="features">
+          <div class="feature">
+            <div class="tag">DESIGN</div>
+            <p class="txt">ブラック基調の外観で、街並みに映えるモダンデザイン</p>
+          </div>
+          <div class="feature">
+            <div class="tag">PLAN</div>
+            <p class="txt">ぐるっと回れる回遊動線で、家事・生活のムダを削減</p>
+          </div>
+          <div class="feature">
+            <div class="tag">ROOM</div>
+            <p class="txt">小上がり和室＋引き出し収納で、くつろぎと収納を両立</p>
+          </div>
+          <div class="feature">
+            <div class="tag">KITCHEN</div>
+            <p class="txt">キッチン×ダイニング横並びで、配膳・片付けがスムーズ</p>
+          </div>
+          <div class="feature">
+            <div class="tag">INTERIOR</div>
+            <p class="txt">下がり天井やTV背面の意匠壁で、空間にアクセント</p>
+          </div>
+          <div class="feature">
+            <div class="tag">PERFORMANCE</div>
+            <p class="txt">長期優良住宅認定／省令準耐火／高気密・高断熱</p>
+          </div>
+          <div class="feature">
+            <div class="tag">SAFETY</div>
+            <p class="txt">耐震等級3＋制震ダンパーで、安心に配慮</p>
+          </div>
+          <div class="feature">
+            <div class="tag">CHECK</div>
+            <p class="txt">“体感”で分かる：動線・収納・サイズ感を現地で確認</p>
+          </div>
+        </div>
+
+        <div class="line"></div>
+        <span class="badge">おすすめ</span>
+        <p class="small" style="margin:10px 0 0;">
+          見学前に「気になるポイント」をLINEで送っていただけると、当日スムーズにご案内できます。
+        </p>
+      </aside>
+    </section>
+
+    <section class="card" id="contact" style="margin-top:14px;">
+      <h2>LINEで問い合わせ</h2>
+      <p class="small" style="margin:0 0 10px;">
+        「日程相談」「家づくりの相談」「場所の確認」など、気軽にLINEください。
+      </p>
+
+      <div class="ctaRow">
+        <a class="btn primary"
+           href="https://line.me/ti/p/uV85z4lp5j"
+           target="_blank" rel="noopener">
+          LINEで問い合わせる
+        </a>
+        <a class="btn"
+           href="https://line.me/ti/p/uV85z4lp5j"
+           target="_blank" rel="noopener">
+          まずは友だち追加
+        </a>
+      </div>
+
+      <div class="line"></div>
+
+      <div class="badge">LINEに送るテンプレ（コピペ用）</div>
+      <p class="small" style="margin-top:10px; margin-bottom:0;">
+        ①お名前：<br>
+        ②見学希望日：1/24 or 1/25<br>
+        ③希望時間帯：午前／午後／指定（　）<br>
+        ④人数：大人（　）名／子ども（　）名<br>
+        ⑤相談したいこと：（任意）
+      </p>
+    </section>
+
+    <footer class="card">
+      <div class="small">
+        <div>※本ページはイベント告知用テンプレです。内容は元情報を参考にした要約です。</div>
+        <div style="margin-top:6px;">
+          出典（元ページ）：<a href="https://www.kinokuni-j.co.jp/notice/7081/" target="_blank" rel="noopener">紀の国住宅 お知らせ</a>
+        </div>
+      </div>
+    </footer>
+  </main>
+</body>
+</html>
